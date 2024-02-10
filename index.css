@@ -43,7 +43,7 @@ footer {
 
 a,
 a:visited {
-	font-weight: bold;
+	font-weight: 500;
 	color: var(--text-faded);
 	text-decoration: none;
 	transition: color 0.5s ease;
