@@ -1,7 +1,77 @@
+@import url("https://rsms.me/inter/inter.css");
+@import url("https://cdn.jsdelivr.net/gh/mortezaom/google-sans-cdn@master/fonts.css");
+
 :root {
+	--alert: coral;
+	--background: #f9f9f9;
+	--border: rgba(0, 0, 0, 0.1);
+	--heading: #121212;
+	--link: #0a85d1;
 	--swiper-scrollbar-bottom: 0.8rem;
 	--swiper-scrollbar-bg-color: rgba(0, 0, 0, 0.1);
 	--swiper-scrollbar-drag-bg-color: rgba(255, 255, 255, 0.8);
+	--text-primary: #161616;
+	--text-secondary: #888;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+
+	box-sizing: none;
+	list-style: none;
+}
+
+html {
+	font-family: Google Sans, Inter, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: 300;
+	letter-spacing: 0.05rem;
+}
+
+h1 {
+	font-size: 3.2rem;
+	font-weight: 400;
+	line-height: 8rem;
+	color: var(--heading);
+}
+
+h2 {
+	font-size: 2.8rem;
+	font-weight: 400;
+	line-height: 3rem;
+	color: var(--heading);
+}
+
+p {
+	font-size: 1.6rem;
+	line-height: 3.6rem;
+	color: var(--text-primary);
+}
+
+a,
+a:visited {
+	font-weight: 400;
+	color: var(--link);
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+a:has(> svg) {
+	display: inline-flex;
+	align-items: center;
+}
+
+a:has(> svg) svg {
+	margin-left: 0.4rem;
+	vertical-align: middle;
+
+	width: 0.8rem;
+
+	fill: var(--link);
 }
 
 body {
@@ -9,62 +79,70 @@ body {
 	flex-direction: column;
 	flex-wrap: wrap;
 	align-items: center;
+
+	background: var(--background);
+}
+
+viewport-alert {
+	display: none;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+
+	width: 80vw;
+	height: 100vh;
+
+	color: var(--text-primary);
+	font-size: 1.6rem;
+	line-height: 3.2rem;
 }
 
 wrapper {
-	width: 90vw;
+	width: 80vw;
 	max-width: 80rem;
 	margin-left: auto;
 	margin-right: auto;
 }
 
-viewport-alert {
-	display: none;
-	width: 90vw;
-	height: 100vh;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
-}
-
-viewport-alert {
-	font-size: 1.6rem;
-	color: var(--text);
-	line-height: 3.2rem;
-}
-
-header,
-section,
-footer {
+wrapper header,
+wrapper section,
+wrapper footer {
 	margin-top: 8rem;
 	width: 100%;
 }
 
-a,
-a:visited {
-	font-weight: 500;
-	color: var(--text-faded);
-	text-decoration: none;
-	transition: color 0.5s ease;
-}
-
-a:hover {
-	color: var(--link-hover);
-}
-
-socials {
+wrapper header socials {
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-start;
-	margin-top: 1.6rem;
+	margin-top: 3.2rem;
 }
 
-socials a {
-	margin-right: 0.8rem;
+wrapper header socials a {
+	font-size: 1.6rem;
 }
 
-subsection {
+wrapper section swiper-container {
+	width: 100%;
+	height: 40rem;
+}
+
+wrapper section swiper-container[gallery] {
+	cursor: grab;
+}
+
+wrapper section swiper-container swiper-slide img {
+	object-fit: cover;
+	object-position: center;
+
+	width: 100%;
+	height: 100%;
+
+	border-radius: 1.2rem;
+}
+
+wrapper section subsection {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -72,78 +150,31 @@ subsection {
 	margin-top: 4rem;
 }
 
-left {
+wrapper section subsection left {
 	width: 25%;
 }
 
-roles,
-members,
-tech,
-links {
+wrapper section subsection left time,
+wrapper section subsection left links {
 	display: block;
-}
-
-roles,
-members,
-links {
 	font-size: 1.6rem;
 	line-height: 3.2rem;
+	margin-top: 0.4rem;
 }
 
-roles {
-	color: var(--heading);
-	margin-top: 0.8rem;
+wrapper section subsection left time {
+	color: var(--text-secondary);
 }
 
-members,
-links {
-	color: var(--text-faded);
-}
-
-members:first-of-type,
-links:first-of-type {
-	margin-top: 1.6rem;
-}
-
-tech {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: flex-start;
-	align-items: center;
-	font-size: 1.2rem;
-	color: var(--text);
-	margin-top: 1.6rem;
-}
-
-badge:not(:last-child) {
-	margin-right: 0.4rem;
-}
-
-right {
+wrapper section subsection right {
 	width: 65%;
 }
 
-swiper-container {
-	width: 100%;
-	height: 40rem;
-}
-
-swiper-container[gallery] {
-	cursor: grab;
-}
-
-swiper-slide img {
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-	object-position: center;
-}
-
-footer {
-	padding-top: 4rem;
+wrapper footer p {
+	padding-top: 2rem;
 	margin-bottom: 8rem;
+
 	border-top: 1px solid var(--border);
 	font-size: 1.2rem;
-	color: var(--text-faded);
+	color: var(--text-secondary);
 }
