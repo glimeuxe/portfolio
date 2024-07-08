@@ -3,60 +3,174 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link href="img/favicon-black-32.png" rel="shortcut icon" type="image/x-icon" media="(prefers-color-scheme: light)" />
-		<link href="img/favicon-white-32.png" rel="shortcut icon" type="image/x-icon" media="(prefers-color-scheme: dark)" />
-		<link href="img/favicon-black-256.png" rel="apple-touch-icon" media="(prefers-color-scheme: light)" />
-		<link href="img/favicon-white-256.png" rel="apple-touch-icon" media="(prefers-color-scheme: dark)" />
-		<title>Portfolio - Gregory Lim</title>
+		<link rel="apple-touch-icon" sizes="180x180" href="img/favicon-apple.png" />
+		<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png" />
+		<link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16.png" />
+		<title>Portfolio | Gregory Lim</title>
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
-		<link rel="stylesheet" href="fonts.css" />
-		<link rel="stylesheet" href="lightponents.css" />
-		<link rel="stylesheet" href="index.css" />
-		<link rel="stylesheet" href="queries.css" />
+		<link rel="stylesheet" href="css/index.css" />
+		<link rel="stylesheet" href="css/media-queries.css" />
 	</head>
 	<body>
 		<viewport-alert>The screen is currently too small! Please increase your viewport width to see this page.</viewport-alert>
 		<wrapper>
 			<header>
+				<h1><greeting>Hi</greeting>, I&rsquo;m Gregory.</h1>
 				<p>
-					My name is Gregory Lim and I am a software developer.
-					<br />
-					My experience lies in front-end web development, UI/UX design, and algorithm analysis.
-					<br />
-					I am an undergraduate of Computer Science and Design at the 🏫 <a href="https://www.google.com/maps/place/Singapore+University+of+Technology+and+Design+(SUTD)/@1.3139946,103.6794444,11z/data=!4m10!1m2!2m1!1ssutd!3m6!1s0x31da3cd899f260cb:0x99becabc6d025518!8m2!3d1.341258!4d103.9637585!15sCgRzdXRkIgOIAQGSAQp1bml2ZXJzaXR54AEA!16s%2Fm%2F09gh_cr" target="_blank">SUTD</a>.
+					I make software and enjoy crafting accessible, intuitive, and pleasing user interfaces.<br />
+					I&rsquo;m currently studying Computer Science at the Singapore University of Technology and Design.<br />
+					I go by <a href="https://glimeuxe.github.io/">@glimeuxe</a> on online accounts.
 				</p>
 				<socials>
 					<a href="mailto:gregorylimeurhen@gmail.com" target="_blank">
-						<icon title="E-mail">
-							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail h-4 w-4">
-								<rect width="20" height="16" x="2" y="4" rx="2"></rect>
-								<path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
-							</svg>
-						</icon>
-					</a>
-					<a href="https://github.com/glimeuxe" target="_blank">
-						<icon title="GitHub">
-							<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="h-4 w-4">
-								<title>GitHub</title>
-								<path fill="currentColor" d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"></path>
-							</svg>
-						</icon>
-					</a>
-					<a href="https://linkedin.com/in/glimeuxe" target="_blank">
-						<icon title="LinkedIn">
-							<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="h-4 w-4">
-								<title>LinkedIn</title>
-								<path fill="currentColor" d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"></path>
-							</svg>
-						</icon>
+						Contact
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 8" style="transform: rotate(-90deg)">
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M0.292892 0.292894C0.683416 -0.0976306 1.31658 -0.0976315 1.70711 0.292892L7.00002 5.58579L12.2929 0.292894C12.6834 -0.0976306 13.3166 -0.0976315 13.7071 0.292892C14.0976 0.683416 14.0976 1.31658 13.7071 1.70711L7.70713 7.70711C7.51959 7.89464 7.26524 8 7.00002 8C6.7348 8 6.48045 7.89464 6.29291 7.70711L0.292894 1.70711C-0.0976306 1.31658 -0.0976315 0.683419 0.292892 0.292894Z"></path>
+						</svg>
 					</a>
 				</socials>
 			</header>
 
 			<section>
-				<swiper-container scrollbar="enabled" autoplay="true" effect="fade" crossFade="true" gallery>
+				<swiper-container autoplay="true" effect="fade" crossFade="true">
+					<swiper-slide><img src="img/county-1.png" /></swiper-slide>
+				</swiper-container>
+				<subsection>
+					<left>
+						<h2>County</h2>
+						<time>2024</time>
+						<links>
+							<ul>
+								<li>
+									<a href="https://youtu.be/M07ihe-u-9o" target="_blank">
+										Demo
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 8" style="transform: rotate(-90deg)">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M0.292892 0.292894C0.683416 -0.0976306 1.31658 -0.0976315 1.70711 0.292892L7.00002 5.58579L12.2929 0.292894C12.6834 -0.0976306 13.3166 -0.0976315 13.7071 0.292892C14.0976 0.683416 14.0976 1.31658 13.7071 1.70711L7.70713 7.70711C7.51959 7.89464 7.26524 8 7.00002 8C6.7348 8 6.48045 7.89464 6.29291 7.70711L0.292894 1.70711C-0.0976306 1.31658 -0.0976315 0.683419 0.292892 0.292894Z"></path>
+										</svg>
+									</a>
+								</li>
+								<li>
+									<a href="https://www.figma.com/proto/Q4ZQpuampEes5zRG8lLAgY/County-Poster?scaling=contain" target="_blank">
+										Poster
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 8" style="transform: rotate(-90deg)">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M0.292892 0.292894C0.683416 -0.0976306 1.31658 -0.0976315 1.70711 0.292892L7.00002 5.58579L12.2929 0.292894C12.6834 -0.0976306 13.3166 -0.0976315 13.7071 0.292892C14.0976 0.683416 14.0976 1.31658 13.7071 1.70711L7.70713 7.70711C7.51959 7.89464 7.26524 8 7.00002 8C6.7348 8 6.48045 7.89464 6.29291 7.70711L0.292894 1.70711C-0.0976306 1.31658 -0.0976315 0.683419 0.292892 0.292894Z"></path>
+										</svg>
+									</a>
+								</li>
+							</ul>
+						</links>
+					</left>
+					<right>
+						<p>
+							As part of our coursework for 50.002 Computation Structures,
+							we made an FPGA-based game where two players compete to accurately count crossing animals.
+						</p>
+					</right>
+				</subsection>
+			</section>
+
+			<section>
+				<swiper-container autoplay="true" effect="fade" crossFade="true">
+					<swiper-slide><img src="img/galois-group-1.png" /></swiper-slide>
+				</swiper-container>
+				<subsection>
+					<left>
+						<h2>Galois Group</h2>
+						<time>2023</time>
+						<links>
+							<ul>
+								<li>
+									<a href="https://www.instagram.com/sutdgaloisgroup" target="_blank">
+										Instagram
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 8" style="transform: rotate(-90deg)">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M0.292892 0.292894C0.683416 -0.0976306 1.31658 -0.0976315 1.70711 0.292892L7.00002 5.58579L12.2929 0.292894C12.6834 -0.0976306 13.3166 -0.0976315 13.7071 0.292892C14.0976 0.683416 14.0976 1.31658 13.7071 1.70711L7.70713 7.70711C7.51959 7.89464 7.26524 8 7.00002 8C6.7348 8 6.48045 7.89464 6.29291 7.70711L0.292894 1.70711C-0.0976306 1.31658 -0.0976315 0.683419 0.292892 0.292894Z"></path>
+										</svg>
+									</a>
+								</li>
+								<li>
+									<a href="https://www.figma.com/proto/27uiB3g8akQNafIKXadw2E/Posters" target="_blank">
+										Posters
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 8" style="transform: rotate(-90deg)">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M0.292892 0.292894C0.683416 -0.0976306 1.31658 -0.0976315 1.70711 0.292892L7.00002 5.58579L12.2929 0.292894C12.6834 -0.0976306 13.3166 -0.0976315 13.7071 0.292892C14.0976 0.683416 14.0976 1.31658 13.7071 1.70711L7.70713 7.70711C7.51959 7.89464 7.26524 8 7.00002 8C6.7348 8 6.48045 7.89464 6.29291 7.70711L0.292894 1.70711C-0.0976306 1.31658 -0.0976315 0.683419 0.292892 0.292894Z"></path>
+										</svg>
+									</a>
+								</li>
+							</ul>
+						</links>
+					</left>
+					<right>
+						<p>
+							As Publicity Director, I crafted publicity messages and posters to promote events and establish an identity for the club. Posters were designed with a consistent dark design language that borrows from the Monopo art style.
+						</p>
+					</right>
+				</subsection>
+			</section>
+
+			<section>
+				<swiper-container autoplay="true" effect="fade" crossFade="true">
+					<swiper-slide><img src="img/venshell-1.png" /></swiper-slide>
+				</swiper-container>
+				<subsection>
+					<left>
+						<h2>venshell</h2>
+						<time>2024</time>
+						<links>
+							<ul>
+								<li>
+									<a href="https://github.com/glimeuxe/venshell/" target="_blank">
+										Code
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 8" style="transform: rotate(-90deg)">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M0.292892 0.292894C0.683416 -0.0976306 1.31658 -0.0976315 1.70711 0.292892L7.00002 5.58579L12.2929 0.292894C12.6834 -0.0976306 13.3166 -0.0976315 13.7071 0.292892C14.0976 0.683416 14.0976 1.31658 13.7071 1.70711L7.70713 7.70711C7.51959 7.89464 7.26524 8 7.00002 8C6.7348 8 6.48045 7.89464 6.29291 7.70711L0.292894 1.70711C-0.0976306 1.31658 -0.0976315 0.683419 0.292892 0.292894Z"></path>
+										</svg>
+									</a>
+								</li>
+							</ul>
+						</links>
+					</left>
+					<right>
+						<p>
+							A simple, light-weight shell program designed for POSIX-compliant operating systems,
+							originally designed for a school project.
+						</p>
+					</right>
+				</subsection>
+			</section>
+
+			<section>
+				<swiper-container autoplay="true" effect="fade" crossFade="true">
+					<swiper-slide><img src="img/rhytra-1.png" /></swiper-slide>
+				</swiper-container>
+				<subsection>
+					<left>
+						<h2>Rhytra</h2>
+						<time>2022</time>
+						<links>
+							<ul>
+								<li>
+									<a href="https://glimeuxe.github.io/rhytra/" target="_blank">
+										Demo
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 8" style="transform: rotate(-90deg)">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M0.292892 0.292894C0.683416 -0.0976306 1.31658 -0.0976315 1.70711 0.292892L7.00002 5.58579L12.2929 0.292894C12.6834 -0.0976306 13.3166 -0.0976315 13.7071 0.292892C14.0976 0.683416 14.0976 1.31658 13.7071 1.70711L7.70713 7.70711C7.51959 7.89464 7.26524 8 7.00002 8C6.7348 8 6.48045 7.89464 6.29291 7.70711L0.292894 1.70711C-0.0976306 1.31658 -0.0976315 0.683419 0.292892 0.292894Z"></path>
+										</svg>
+									</a>
+								</li>
+							</ul>
+						</links>
+					</left>
+					<right>
+						<p>
+							A falling-note rhythm game.
+							Inspired by Piano Tiles and osu!mania,
+							this game challenges players to press keys in sync with the descent of note blocks along a designated line.
+						</p>
+					</right>
+				</subsection>
+			</section>
+
+			<section>
+				<swiper-container autoplay="true" effect="fade" crossFade="true" gallery>
 					<swiper-slide><img src="img/50arches-1.gif" /></swiper-slide>
 					<swiper-slide><img src="img/50arches-2.jpg" /></swiper-slide>
 					<swiper-slide><img src="img/50arches-3.jpg" /></swiper-slide>
@@ -66,110 +180,91 @@
 				</swiper-container>
 				<subsection>
 					<left>
-						<h1>50Arches</h1>
-						<roles>2023</roles>
-						<members>
+						<h2>50Arches</h2>
+						<time>2023</time>
+						<links>
 							<ul>
-								<li>Austin Isaac</li>
-								<li>Tan Hyu Seong</li>
-								<li>Muthu Ramaswamy</li>
-								<li>William Tan</li>
+								<li>
+									<a href="https://youtu.be/sZ329ZgY7F4" target="_blank">
+										Trailer
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 8" style="transform: rotate(-90deg)">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M0.292892 0.292894C0.683416 -0.0976306 1.31658 -0.0976315 1.70711 0.292892L7.00002 5.58579L12.2929 0.292894C12.6834 -0.0976306 13.3166 -0.0976315 13.7071 0.292892C14.0976 0.683416 14.0976 1.31658 13.7071 1.70711L7.70713 7.70711C7.51959 7.89464 7.26524 8 7.00002 8C6.7348 8 6.48045 7.89464 6.29291 7.70711L0.292894 1.70711C-0.0976306 1.31658 -0.0976315 0.683419 0.292892 0.292894Z"></path>
+										</svg>
+									</a>
+								</li>
+								<li>
+									<a href="https://asd.courses.sutd.edu.sg/dti-teams/cohort-3-group-9/" target="_blank">
+										Website
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 8" style="transform: rotate(-90deg)">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M0.292892 0.292894C0.683416 -0.0976306 1.31658 -0.0976315 1.70711 0.292892L7.00002 5.58579L12.2929 0.292894C12.6834 -0.0976306 13.3166 -0.0976315 13.7071 0.292892C14.0976 0.683416 14.0976 1.31658 13.7071 1.70711L7.70713 7.70711C7.51959 7.89464 7.26524 8 7.00002 8C6.7348 8 6.48045 7.89464 6.29291 7.70711L0.292894 1.70711C-0.0976306 1.31658 -0.0976315 0.683419 0.292892 0.292894Z"></path>
+										</svg>
+									</a>
+								</li>
 							</ul>
-						</members>
-						<tech>
-							<badge>Arduino</badge>
-							<badge>C</badge>
-						</tech>
-						<links>🔗 <a href="https://asd.courses.sutd.edu.sg/dti-teams/cohort-3-group-9/" target="_blank">Website</a></links>
+						</links>
 					</left>
 					<right>
-						<p>A functional, life-sized prototype for an interactively light-able bridge archway. Our goal was to design an interactive and sustainable lighting solution for the Changi Business Park Garden, in order to make it feel more welcoming, comfortable, and engaging. The LED strips on each arch emit warm ambient light by default, and users may physically interact with the windchimes hanging from each arch to trigger a unique "ripple" lighting effect.</p>
+						<p>
+							A functional, life-sized prototype for an interactively light-able bridge archway.
+							Our goal was to design an interactive and sustainable lighting solution for the Changi Business Park Garden,
+							in order to make it feel more welcoming, comfortable, and engaging.
+							The LED strips on each arch emit warm ambient light by default,
+							and users may physically interact with the windchimes hanging from each arch to trigger a unique &ldquo;ripple&rdquo; lighting effect.
+						</p>
 					</right>
 				</subsection>
 			</section>
 
 			<section>
-				<swiper-container scrollbar="enabled" autoplay="true" effect="fade" crossFade="true">
-					<swiper-slide><img src="img/rhytra-1.png" /></swiper-slide>
-				</swiper-container>
-				<subsection>
-					<left>
-						<h1>Rhytra</h1>
-						<roles>2022</roles>
-						<members></members>
-						<tech>
-							<badge>HTML</badge>
-							<badge>CSS</badge>
-							<badge>JavaScript</badge>
-							<badge>Paint.NET</badge>
-						</tech>
-						<links>📺 <a href="https://glimeuxe.github.io/rhytra/" target="_blank">Demo</a></links>
-						<links>⚙️ <a href="https://github.com/glimeuxe/rhytra/" target="_blank">Code</a></links>
-					</left>
-					<right>
-						<p>A falling-note rhythm game. Inspired by Piano Tiles and osu!mania, this web-based rhythm game challenges players to press keyboard keys in sync with the descent of corresponding note blocks along the designated line.</p>
-					</right>
-				</subsection>
-			</section>
-
-			<section>
-				<swiper-container scrollbar="enabled" autoplay="true" effect="fade" crossFade="true">
-					<swiper-slide><img src="img/venshell-1.png" /></swiper-slide>
-				</swiper-container>
-				<subsection>
-					<left>
-						<h1>venshell</h1>
-						<roles>2024</roles>
-						<members></members>
-						<tech>
-							<badge>C</badge>
-						</tech>
-						<links>⚙️ <a href="https://github.com/glimeuxe/venshell/" target="_blank">Code</a></links>
-					</left>
-					<right>
-						<p>A simple, light-weight shell program designed for POSIX-compliant OSes.</p>
-					</right>
-				</subsection>
-			</section>
-
-			<section>
-				<swiper-container scrollbar="enabled" autoplay="true" effect="fade" crossFade="true">
+				<swiper-container autoplay="true" effect="fade" crossFade="true">
 					<swiper-slide><img src="img/emmyai-1.png" /></swiper-slide>
 				</swiper-container>
 				<subsection>
 					<left>
-						<h1>EmmyAI</h1>
-						<roles>2023</roles>
-						<members></members>
-						<tech>
-							<badge>Python</badge>
-						</tech>
-						<links>⚙️ <a href="https://github.com/glimeuxe/emmyai/" target="_blank">Code</a></links>
-						<!--<links>🔗 <a href="https://gregorylimeurhen.pyscriptapps.com/emmyai/latest/" target="_blank">Demo</a></links>-->
+						<h2>EmmyAI</h2>
+						<time>2023</time>
+						<links>
+							<ul>
+								<li>
+									<a href="https://github.com/glimeuxe/emmyai/" target="_blank">
+										Code
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 8" style="transform: rotate(-90deg)">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M0.292892 0.292894C0.683416 -0.0976306 1.31658 -0.0976315 1.70711 0.292892L7.00002 5.58579L12.2929 0.292894C12.6834 -0.0976306 13.3166 -0.0976315 13.7071 0.292892C14.0976 0.683416 14.0976 1.31658 13.7071 1.70711L7.70713 7.70711C7.51959 7.89464 7.26524 8 7.00002 8C6.7348 8 6.48045 7.89464 6.29291 7.70711L0.292894 1.70711C-0.0976306 1.31658 -0.0976315 0.683419 0.292892 0.292894Z"></path>
+										</svg>
+									</a>
+								</li>
+								<!-- https://gregorylimeurhen.pyscriptapps.com/emmyai/latest/" -->
+							</ul>
+						</links>
 					</left>
 					<right>
-						<p>An AI character designed to entertain in life-like ways. Full features include speech-to-text built on OpenAI's Whisper model, responses generated by a fine-tuned version of OpenAI's Curie LLM, text-to-speech built on Microsoft Azure's Ashley speech synthesis model, and live animations generated by VTube Studio.</p>
+						<p>
+							An AI character designed to entertain in life-like ways.
+							Full features include speech-to-text built on OpenAI's Whisper model,
+							responses generated by a fine-tuned version of OpenAI's Curie LLM,
+							text-to-speech built on Microsoft Azure's Ashley speech synthesis model,
+							and live animations generated by VTube Studio.
+						</p>
 					</right>
 				</subsection>
 			</section>
 
 			<section>
-				<swiper-container scrollbar="enabled" autoplay="true" effect="fade" crossFade="true">
+				<swiper-container autoplay="true" effect="fade" crossFade="true">
 					<swiper-slide><img src="img/posties-1.png" /></swiper-slide>
 				</swiper-container>
 				<subsection>
 					<left>
-						<h1>Posties</h1>
-						<roles>2022</roles>
-						<members></members>
-						<tech>
-							<badge>HTML</badge>
-							<badge>CSS</badge>
-							<badge>JavaScript</badge>
-							<badge>Tiled</badge>
-						</tech>
-						<links>📺 <a href="https://glimeuxe.github.io/posties/" target="_blank">Demo</a></links>
-						<links>⚙️ <a href="https://github.com/glimeuxe/posties/" target="_blank">Code</a></links>
+						<h2>Posties</h2>
+						<time>2022</time>
+						<links>
+							<a href="https://glimeuxe.github.io/posties/" target="_blank">
+								Demo
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 8" style="transform: rotate(-90deg)">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M0.292892 0.292894C0.683416 -0.0976306 1.31658 -0.0976315 1.70711 0.292892L7.00002 5.58579L12.2929 0.292894C12.6834 -0.0976306 13.3166 -0.0976315 13.7071 0.292892C14.0976 0.683416 14.0976 1.31658 13.7071 1.70711L7.70713 7.70711C7.51959 7.89464 7.26524 8 7.00002 8C6.7348 8 6.48045 7.89464 6.29291 7.70711L0.292894 1.70711C-0.0976306 1.31658 -0.0976315 0.683419 0.292892 0.292894Z"></path>
+								</svg>
+							</a>
+						</links>
 					</left>
 					<right>
 						<p>A sandbox environment made to demonstrate 2D movement and collision for a playable character.</p>
@@ -178,32 +273,42 @@
 			</section>
 
 			<section>
-				<swiper-container scrollbar="enabled" autoplay="true" effect="fade" crossFade="true">
-					<swiper-slide><img src="img/minute-tab-1.png" /></swiper-slide>
+				<swiper-container autoplay="true" effect="fade" crossFade="true">
+					<swiper-slide><img src="img/minutetab-1.png" /></swiper-slide>
 				</swiper-container>
 				<subsection>
 					<left>
-						<h1>Minute Tab</h1>
-						<roles>2021</roles>
-						<members></members>
-						<tech>
-							<badge>HTML</badge>
-							<badge>CSS</badge>
-							<badge>JavaScript</badge>
-							<badge>Paint.NET</badge>
-						</tech>
-						<links>📺 <a href="https://glimeuxe.github.io/minutetab/" target="_blank">Demo</a></links>
-						<links>⚙️ <a href="https://github.com/glimeuxe/minutetab/" target="_blank">Code</a></links>
+						<h2>MinuteTab</h2>
+						<time>2021</time>
+						<links>
+							<ul>
+								<li>
+									<a href="https://glimeuxe.github.io/minutetab/" target="_blank">
+										Demo
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 8" style="transform: rotate(-90deg)">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M0.292892 0.292894C0.683416 -0.0976306 1.31658 -0.0976315 1.70711 0.292892L7.00002 5.58579L12.2929 0.292894C12.6834 -0.0976306 13.3166 -0.0976315 13.7071 0.292892C14.0976 0.683416 14.0976 1.31658 13.7071 1.70711L7.70713 7.70711C7.51959 7.89464 7.26524 8 7.00002 8C6.7348 8 6.48045 7.89464 6.29291 7.70711L0.292894 1.70711C-0.0976306 1.31658 -0.0976315 0.683419 0.292892 0.292894Z"></path>
+										</svg>
+									</a>
+								</li>
+							</ul>
+						</links>
 					</left>
 					<right>
-						<p>A modern, distraction-free new tab page. With high-quality background images selected at random upon every page refresh, this page focuses solely on cleanly and elegantly displaying the user's local time.</p>
+						<p>
+							A modern, distraction-free new tab page.
+							With high-quality background images selected at random upon every page refresh,
+							this page focuses solely on cleanly and elegantly displaying the local time.
+						</p>
 					</right>
 				</subsection>
 			</section>
 
-			<footer>© 2024 Gregory Lim.</footer>
+			<footer>
+				<p>© 2024 Gregory Lim.</p>
+			</footer>
 		</wrapper>
+		<script src="js/swiper.js"></script>
+		<script src="js/index.js"></script>
 
-		<script src="index.js"></script>
 	</body>
 </html>
